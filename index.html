@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Da GWOATS — girls flag football, development, competition and the next level.">
+  <title>Da GWOATS | Built Different</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#home">
+      <img src="assets/gwoats-logo.jpeg" alt="Da GWOATS logo">
+      <span>DA GWOATS</span>
+    </a>
+    <button class="menu" aria-label="Open menu">☰</button>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#recruiting">Recruiting</a>
+      <a href="#support">Support</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <p class="eyebrow">GIRLS FLAG FOOTBALL • DELTONA, FL</p>
+        <h1>BUILT<br><span>DIFFERENT.</span></h1>
+        <p class="hero-copy">Da GWOATS is more than a team. We're building confidence, creating opportunities and preparing girls for the next level — one rep, one game and one goal at a time.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#support">Support the Movement</a>
+          <a class="btn ghost" href="#about">Our Story</a>
+        </div>
+      </div>
+      <div class="hero-logo">
+        <img src="assets/gwoats-logo.jpeg" alt="Da GWOATS">
+      </div>
+    </section>
+
+    <section class="ticker">
+      <div>DA GWOATS</div><div>YEAR 2 LOADING</div><div>NO EXCUSES</div><div>BUILD THE NEXT LEVEL</div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-tag">01 / OUR STORY</div>
+      <div class="two-col">
+        <div>
+          <h2>MORE THAN<br><span>FLAG FOOTBALL.</span></h2>
+        </div>
+        <div>
+          <p class="lead">Da GWOATS was created to give girls a place to compete, grow and believe in what they can become.</p>
+          <p>We push discipline, teamwork, accountability and confidence. The goal isn't just to win games. It's to help build young women who understand their value and know how to work for the opportunities they want.</p>
+          <p>From local tournaments to college recruiting, we're chasing the next level together.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="dark-section">
+      <div class="section-tag">02 / THE GWOATS</div>
+      <h2>ONE TEAM.<br><span>ONE STANDARD.</span></h2>
+      <div class="cards">
+        <article><strong>01</strong><h3>COMPETE</h3><p>Bring energy, toughness and focus every time you step on the field.</p></article>
+        <article><strong>02</strong><h3>DEVELOP</h3><p>Get better every practice. Skills, football IQ, confidence and leadership.</p></article>
+        <article><strong>03</strong><h3>REPRESENT</h3><p>Carry the GWOATS name with pride on the field and in the community.</p></article>
+      </div>
+    </section>
+
+    <section id="schedule" class="section">
+      <div class="section-tag">03 / SCHEDULE</div>
+      <div class="two-col">
+        <div><h2>GAME<br><span>DAY.</span></h2><p class="lead">Check back for the latest tournament and practice schedule.</p></div>
+        <div class="schedule-box">
+          <div class="schedule-row"><span>UPCOMING</span><b>Season 2</b></div>
+          <div class="schedule-row"><span>STATUS</span><b>IN FULL EFFECT</b></div>
+          <div class="schedule-row"><span>LOCATION</span><b>FLORIDA</b></div>
+          <div class="schedule-row"><span>UPDATES</span><b>COMING SOON</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recruiting" class="impact">
+      <div class="section-tag">04 / THE MISSION</div>
+      <h2>CHANGING<br><span>THE GAME.</span></h2>
+      <p>We're proud of the opportunities our athletes are earning at the next level. Every practice, tournament and conversation is part of a bigger mission: opening doors and changing lives.</p>
+      <div class="stats">
+        <div><b>40+</b><span>COLLEGE OPPORTUNITIES*</span></div>
+        <div><b>2</b><span>SEASONS & COUNTING</span></div>
+        <div><b>1</b><span>FAMILY / ONE STANDARD</span></div>
+      </div>
+      <small>*Update this number anytime your recruiting total changes.</small>
+    </section>
+
+    <section id="support" class="section support">
+      <div class="section-tag">05 / SUPPORT</div>
+      <div class="support-box">
+        <h2>SUPPORT<br><span>THE MOVEMENT.</span></h2>
+        <p>Sponsors, donations and community support help us keep building opportunities for these athletes.</p>
+        <div class="cashapp">$Dagwoatscoach</div>
+        <p class="small">Every contribution helps support the grind, travel, tournaments and the next generation of GWOATS.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="dark-section contact">
+      <div class="section-tag">06 / CONNECT</div>
+      <h2>LET'S<br><span>CONNECT.</span></h2>
+      <p>For sponsorships, team information, recruiting questions or general inquiries:</p>
+      <a class="email" href="mailto:dagwoatsfl@gmail.com">dagwoatsfl@gmail.com</a>
+      <a class="social" href="https://instagram.com/gwoatflag" target="_blank" rel="noopener">@gwoatflag on Instagram</a>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/gwoats-logo.jpeg" alt="Da GWOATS">
+    <div>© 2026 DA GWOATS • BUILT DIFFERENT.</div>
+  </footer>
+
+  <script>
+    const menu = document.querySelector('.menu');
+    const nav = document.querySelector('.nav nav');
+    menu.addEventListener('click', () => nav.classList.toggle('open'));
+    document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+  </script>
+</body>
+</html>
